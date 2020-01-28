@@ -1,0 +1,47 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[",
+            "    {",
+            "        \"typeID\": \"Male\"",
+            "    },",
+            "    {",
+            "        \"typeID\": \"Female\"",
+            "    },",
+            "    {",
+            "        \"typeID\": \"Others\"",
+            "    }",
+            "]"
+        ],
+        "designer|userAlias": "gendertypes",
+        "designer|userClassName": "genderTypes",
+        "model": "GenderType",
+        "storeId": "genderTypes"
+    },
+    "configAlternates": {
+        "data": "array",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "model": "model",
+        "storeId": "string"
+    },
+    "designerId": "474cd976-717d-4d78-9053-6bd859e72d6b",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Memory",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "name": "MyMemoryProxy",
+            "designerId": "c86cac25-57d8-4263-9cad-efa1e658fa3c"
+        }
+    ]
+}

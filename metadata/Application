@@ -6,7 +6,13 @@
     },
     "codeClass": null,
     "userConfig": {
+        "models": [
+            "GenderType"
+        ],
         "name": "MStore",
+        "stores": [
+            "genderTypes"
+        ],
         "views": [
             "admin.SinginWin",
             "admin.SignupWin",
@@ -15,7 +21,9 @@
     },
     "configAlternates": {
         "name": "string",
-        "views": "typedarray"
+        "views": "typedarray",
+        "models": "typedarray",
+        "stores": "typedarray"
     },
     "name": "Application",
     "designerId": "application"

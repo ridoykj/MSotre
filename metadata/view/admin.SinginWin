@@ -6,7 +6,6 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|initialView": true,
         "designer|userAlias": "admin.singinwin",
         "designer|userClassName": "admin.SinginWin",
         "height": 250,

@@ -6,6 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
+        "designer|initialView": true,
         "designer|userAlias": "admin.signupwin",
         "designer|userClassName": "admin.SignupWin",
         "height": 250,
@@ -17,7 +18,8 @@
         "designer|userClassName": "string",
         "height": "auto",
         "layout": "string",
-        "width": "auto"
+        "width": "auto",
+        "designer|initialView": "boolean"
     },
     "name": "MyViewport",
     "designerId": "e4770820-f45f-4e47-a919-a06b1d2a4a35",
@@ -47,7 +49,7 @@
             "designerId": "6be7d2af-5c5b-406a-8ff8-4b5bd35c2286",
             "cn": [
                 {
-                    "type": "Ext.Img",
+                    "type": "Ext.panel.Panel",
                     "reference": {
                         "name": "dockedItems",
                         "type": "array"
@@ -55,16 +57,38 @@
                     "codeClass": null,
                     "userConfig": {
                         "dock": "top",
-                        "height": 110,
-                        "width": 367
+                        "height": 101,
+                        "layout": "center"
                     },
                     "configAlternates": {
                         "dock": "string",
                         "height": "auto",
-                        "width": "auto"
+                        "layout": "string"
                     },
-                    "name": "MyImg",
-                    "designerId": "c366d3f8-2b2e-417d-9136-c2339fc63969"
+                    "name": "MyPanel1",
+                    "designerId": "cc530694-c3ef-4693-aea6-5b4b0bf8857f",
+                    "cn": [
+                        {
+                            "type": "Ext.Img",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 78,
+                                "src": "ico/user.png",
+                                "width": 89
+                            },
+                            "configAlternates": {
+                                "height": "auto",
+                                "src": "uri",
+                                "width": "auto"
+                            },
+                            "name": "MyImg",
+                            "designerId": "5e39b71e-597c-45ff-b519-5ceb2db156be"
+                        }
+                    ]
                 },
                 {
                     "type": "Ext.form.field.Text",
@@ -146,12 +170,20 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "displayField": "typeID",
                         "fieldLabel": "Gender",
-                        "layout|anchor": "100%"
+                        "layout|anchor": "100%",
+                        "queryMode": "local",
+                        "store": "genderTypes",
+                        "valueField": "typeID"
                     },
                     "configAlternates": {
                         "fieldLabel": "string",
-                        "layout|anchor": "string"
+                        "layout|anchor": "string",
+                        "displayField": "datafield",
+                        "queryMode": "string",
+                        "store": "store",
+                        "valueField": "datafield"
                     },
                     "name": "MyComboBox",
                     "designerId": "09518c7e-04a0-4620-a231-0817eb84660b"
@@ -165,11 +197,13 @@
                     "codeClass": null,
                     "userConfig": {
                         "fieldLabel": "Password",
+                        "inputType": "password",
                         "layout|anchor": "100%"
                     },
                     "configAlternates": {
                         "fieldLabel": "string",
-                        "layout|anchor": "string"
+                        "layout|anchor": "string",
+                        "inputType": "string"
                     },
                     "name": "MyTextField3",
                     "designerId": "6024495c-cc8b-4bf6-b0e7-d03b26b11383"
@@ -183,11 +217,13 @@
                     "codeClass": null,
                     "userConfig": {
                         "fieldLabel": "Re-Passwrod",
+                        "inputType": "password",
                         "layout|anchor": "100%"
                     },
                     "configAlternates": {
                         "fieldLabel": "string",
-                        "layout|anchor": "string"
+                        "layout|anchor": "string",
+                        "inputType": "string"
                     },
                     "name": "MyTextField4",
                     "designerId": "978129cc-3ac4-4e23-b43f-4a0241256d79"

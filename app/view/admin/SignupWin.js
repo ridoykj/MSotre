@@ -42,10 +42,18 @@ Ext.define('MStore.view.admin.SignupWin', {
             title: 'My Form',
             dockedItems: [
                 {
-                    xtype: 'image',
+                    xtype: 'panel',
                     dock: 'top',
-                    height: 110,
-                    width: 367
+                    height: 101,
+                    layout: 'center',
+                    items: [
+                        {
+                            xtype: 'image',
+                            height: 78,
+                            width: 89,
+                            src: 'ico/user.png'
+                        }
+                    ]
                 },
                 {
                     xtype: 'panel',
@@ -95,17 +103,23 @@ Ext.define('MStore.view.admin.SignupWin', {
                 {
                     xtype: 'combobox',
                     anchor: '100%',
-                    fieldLabel: 'Gender'
+                    fieldLabel: 'Gender',
+                    displayField: 'typeID',
+                    queryMode: 'local',
+                    store: 'genderTypes',
+                    valueField: 'typeID'
                 },
                 {
                     xtype: 'textfield',
                     anchor: '100%',
-                    fieldLabel: 'Password'
+                    fieldLabel: 'Password',
+                    inputType: 'password'
                 },
                 {
                     xtype: 'textfield',
                     anchor: '100%',
-                    fieldLabel: 'Re-Passwrod'
+                    fieldLabel: 'Re-Passwrod',
+                    inputType: 'password'
                 }
             ]
         }
