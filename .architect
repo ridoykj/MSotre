@@ -1,0 +1,32 @@
+{
+    "expandedState": {
+        "view": true,
+        "store": true,
+        "model": true,
+        "controller": true,
+        "resource": true,
+        "78a245fb-3aa9-4434-bcd9-97545e2e78ee": {
+            "id": "78a245fb-3aa9-4434-bcd9-97545e2e78ee"
+        },
+        "b206fa06-99b3-4188-ad52-97865245fd44": {
+            "id": "b206fa06-99b3-4188-ad52-97865245fd44"
+        },
+        "6815af71-0a50-4526-a356-0fa9be448345": {
+            "id": "6815af71-0a50-4526-a356-0fa9be448345"
+        }
+    },
+    "tabState": {
+        "openTabs": []
+    },
+    "canvasState": {
+        "topInstance": null
+    },
+    "inspectorState": {
+        "topInstance": null,
+        "selectedInstance": null
+    },
+    "editMode": "design",
+    "userSettings": {
+        "no-cmd": false
+    }
+}

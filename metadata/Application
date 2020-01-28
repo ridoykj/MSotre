@@ -1,0 +1,16 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "name": "MStore"
+    },
+    "configAlternates": {
+        "name": "string"
+    },
+    "name": "Application",
+    "designerId": "application"
+}
