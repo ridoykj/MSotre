@@ -7,11 +7,13 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "GenderType"
+            "GenderType",
+            "userInfo"
         ],
         "name": "MStore",
         "stores": [
-            "genderTypes"
+            "genderTypes",
+            "userInfos"
         ],
         "views": [
             "admin.SinginWin",

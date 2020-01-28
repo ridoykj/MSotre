@@ -27,6 +27,11 @@ Ext.define('MStore.view.admin.SigninViewController', {
         var email = Ext.getCmp('in_email').value;
         var password = Ext.getCmp('in_pass').value;
         console.log(email + password);
+
+
+        var singup = Ext.create('MStore.view.profile.userProfile',{});
+        singup.show();
+        Ext.getCmp('in_FSignin').destroy();
     }
 
 });

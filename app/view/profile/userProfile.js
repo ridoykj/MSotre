@@ -18,13 +18,149 @@ Ext.define('MStore.view.profile.userProfile', {
     alias: 'widget.profile.userprofile',
 
     requires: [
-        'MStore.view.profile.userProfileViewModel'
+        'MStore.view.profile.userProfileViewModel',
+        'MStore.view.profile.userProfileViewController',
+        'Ext.Img',
+        'Ext.tab.Panel',
+        'Ext.tab.Tab',
+        'Ext.grid.Panel',
+        'Ext.view.Table',
+        'Ext.grid.column.Number',
+        'Ext.grid.column.Template',
+        'Ext.XTemplate',
+        'Ext.grid.column.Date'
     ],
 
+    controller: 'profile.userprofile',
     viewModel: {
         type: 'profile.userprofile'
     },
     height: 250,
-    width: 400
+    width: 400,
+
+    layout: {
+        type: 'hbox',
+        align: 'stretch'
+    },
+    items: [
+        {
+            xtype: 'panel',
+            flex: 0.2,
+            width: 310,
+            layout: {
+                type: 'vbox',
+                align: 'stretch'
+            },
+            items: [
+                {
+                    xtype: 'panel',
+                    flex: 2.5,
+                    layout: 'center',
+                    items: [
+                        {
+                            xtype: 'image',
+                            height: 123,
+                            width: 120,
+                            src: 'ico/shop1.png'
+                        }
+                    ]
+                },
+                {
+                    xtype: 'button',
+                    flex: 2.5,
+                    height: 129,
+                    id: 'us_BmyProfile',
+                    text: 'My Profile',
+                    listeners: {
+                        click: 'onUs_BmyProfileClick'
+                    }
+                },
+                {
+                    xtype: 'button',
+                    flex: 2.5,
+                    height: 144,
+                    id: 'us_Bstore',
+                    text: 'Store',
+                    listeners: {
+                        click: 'onUs_BstoreClick'
+                    }
+                },
+                {
+                    xtype: 'button',
+                    flex: 2.5,
+                    height: 117,
+                    id: 'us_BallClaint',
+                    text: 'All Claint',
+                    listeners: {
+                        click: 'onUs_BallClaintClick'
+                    }
+                }
+            ]
+        },
+        {
+            xtype: 'tabpanel',
+            flex: 0.8,
+            width: 652,
+            activeTab: 0,
+            items: [
+                {
+                    xtype: 'panel',
+                    id: 'us_T1',
+                    width: 610
+                },
+                {
+                    xtype: 'panel',
+                    id: 'us_T2'
+                },
+                {
+                    xtype: 'panel',
+                    id: 'us_T3',
+                    items: [
+                        {
+                            xtype: 'gridpanel',
+                            title: 'My Grid Panel',
+                            store: 'userInfos',
+                            columns: [
+                                {
+                                    xtype: 'numbercolumn',
+                                    dataIndex: 'id',
+                                    text: 'ID'
+                                },
+                                {
+                                    xtype: 'gridcolumn',
+                                    dataIndex: 'name',
+                                    text: 'Name'
+                                },
+                                {
+                                    xtype: 'templatecolumn',
+                                    tpl: [
+                                        '<a href="mailto:{email}">{email}</a>'
+                                    ],
+                                    dataIndex: 'email',
+                                    text: 'Email'
+                                },
+                                {
+                                    xtype: 'gridcolumn',
+                                    dataIndex: 'password',
+                                    text: 'Password'
+                                },
+                                {
+                                    xtype: 'gridcolumn',
+                                    dataIndex: 'gender',
+                                    text: 'Gender'
+                                },
+                                {
+                                    xtype: 'datecolumn',
+                                    dataIndex: 'birthDate',
+                                    text: 'Birth Date',
+                                    format: 'm/j/Y'
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 
 });

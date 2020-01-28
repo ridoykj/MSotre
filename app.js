@@ -21,10 +21,12 @@ Ext.Loader.setConfig({
 
 Ext.application({
     models: [
-        'GenderType'
+        'GenderType',
+        'userInfo'
     ],
     stores: [
-        'genderTypes'
+        'genderTypes',
+        'userInfos'
     ],
     views: [
         'admin.SinginWin',
