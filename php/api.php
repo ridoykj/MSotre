@@ -1,20 +1,20 @@
 <?php
 // define variables and set to empty values
-$name = "";
+$email = "";
 $pass = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $name = $_POST["username"];
-  $pass = $_POST["password"];
+  $email = $_POST["email"];
+  $pass = $_POST["pass"];
 }
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 $dbUserName = 'root';
 $dbUserPass = '';
 $dbServerHost = 'localhost';
-$dbDataBaseName = 'userinfo';
+$dbDataBaseName = 'alluserinfo';
 
 $connect = mysqli_connect($dbServerHost, $dbUserName, $dbUserPass, $dbDataBaseName);
-$sql = "SELECT * FROM userdata WHERE userid= '".$name."' AND pass= '".$pass."';";
+$sql = "SELECT * FROM userdata WHERE email= '".$email."' AND pass= '".$pass."';";
 //$result = mysqli_query($connect, $sql);
 $result = $connect->query($sql);
 if($result->num_rows > 0)
@@ -27,7 +27,7 @@ if($result->num_rows > 0)
 		$json_array[] = $row;
 	}
 	$myfile = fopen("temp.json", "w");
-	$str = 'u = '.$name.' p ='.$pass;
+	$str = 'u = '.$email.' p ='.$pass;
 	fwrite($myfile, json_encode($json_array));
 	fclose($myfile);
 	echo json_encode($json_array);

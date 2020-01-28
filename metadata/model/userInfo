@@ -6,17 +6,17 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "userinfo",
+        "designer|userAlias": "mymodel",
         "designer|userClassName": "userInfo"
     },
     "configAlternates": {
         "designer|userAlias": "string",
         "designer|userClassName": "string"
     },
-    "designerId": "a6236b4c-9d80-419d-9c4c-718c72d1a1d7",
+    "designerId": "997648f0-19fe-4344-8fff-7764bf1fd5c4",
     "cn": [
         {
-            "type": "Ext.data.field.Integer",
+            "type": "Ext.data.field.String",
             "reference": {
                 "name": "fields",
                 "type": "array"
@@ -28,8 +28,8 @@
             "configAlternates": {
                 "name": "string"
             },
-            "name": "MyInteger",
-            "designerId": "3a5401f6-cd80-4b26-83b7-7e65d0c09736"
+            "name": "MyString6",
+            "designerId": "249e8695-b6f6-45b9-8957-1f193e5b1275"
         },
         {
             "type": "Ext.data.field.String",
@@ -44,8 +44,8 @@
             "configAlternates": {
                 "name": "string"
             },
-            "name": "MyString1",
-            "designerId": "ff9d5b2c-d32f-4479-9ad1-28e4577c43ae"
+            "name": "MyString7",
+            "designerId": "fe302db2-f46c-47a2-8203-0925dc0cc1ac"
         },
         {
             "type": "Ext.data.field.String",
@@ -60,8 +60,8 @@
             "configAlternates": {
                 "name": "string"
             },
-            "name": "MyString2",
-            "designerId": "8e5b4455-35b9-4ef8-ac1b-b06a9c5eb7d6"
+            "name": "MyString8",
+            "designerId": "b9157ec2-791f-4242-b1b0-b41aee9a9819"
         },
         {
             "type": "Ext.data.field.String",
@@ -71,13 +71,13 @@
             },
             "codeClass": null,
             "userConfig": {
-                "name": "password"
+                "name": "birthday"
             },
             "configAlternates": {
                 "name": "string"
             },
-            "name": "MyString3",
-            "designerId": "5fd333c7-680e-4dda-a5ce-c921877bf137"
+            "name": "MyString9",
+            "designerId": "91aff34e-9b84-4b40-9490-8299dbd4157d"
         },
         {
             "type": "Ext.data.field.String",
@@ -92,24 +92,24 @@
             "configAlternates": {
                 "name": "string"
             },
-            "name": "MyString4",
-            "designerId": "ab43896a-5368-4db3-bbee-9a5ff533a54a"
+            "name": "MyString10",
+            "designerId": "151b5465-f686-4304-9ab9-0731de0bb3b2"
         },
         {
-            "type": "Ext.data.field.Date",
+            "type": "Ext.data.field.String",
             "reference": {
                 "name": "fields",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "name": "birthDate"
+                "name": "pass"
             },
             "configAlternates": {
                 "name": "string"
             },
-            "name": "MyDate",
-            "designerId": "457477fe-0448-4603-b76f-9a8e670663c8"
+            "name": "MyString11",
+            "designerId": "a7415a78-b05b-4234-a508-37a7e2dafe9d"
         }
     ]
 }

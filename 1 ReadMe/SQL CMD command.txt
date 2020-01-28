@@ -1,0 +1,32 @@
+<<<<<<<<<<<<<<<<<<<<<< 1st create Database >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+CREATE DATABASE alluserinfo;
+
+<<<<<<<<<<<<<<<<<<<<< 2nd create table >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+CREATE TABLE `alluserinfo`.`userdata`
+ ( `id` INT NULL AUTO_INCREMENT ,
+ `name` TEXT NOT NULL ,
+ `email` TEXT NOT NULL ,
+ `birthday` TEXT NOT NULL ,
+ `gender` TEXT NOT NULL ,
+ `pass` TEXT NOT NULL , PRIMARY KEY (`id`)
+);
+
+<<<<<<<<<<<<<<<<<<<<<< 3rd insert some data >>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+INSERT INTO `userdata` (`id`, `userid`, `pass`)
+ VALUES
+ (NULL, 'ridoy', 'kumar'),
+ (NULL, 'salman', '12345678'),
+ (NULL, 'rakib', '435435'),
+ (NULL, 'alamin', '645634'),
+ (NULL, 'shoal', '5467823'),
+ (NULL, 'ripon', '8976'),
+ (NULL, 'kamal', '8967856'),
+ (NULL, 'liton', '3457657'),
+ (NULL, 'nahid', '186975'),
+ (NULL, 'abid', '234674'),
+ (NULL, 'akash', '684467'),
+ (NULL, 'jubayer', '678'),
+ (NULL, 'tomal', '75878');

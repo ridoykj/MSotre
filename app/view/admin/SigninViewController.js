@@ -28,10 +28,43 @@ Ext.define('MStore.view.admin.SigninViewController', {
         var password = Ext.getCmp('in_pass').value;
         console.log(email + password);
 
+        Ext.Ajax.request({
+            url: 'php/api.php',
+            method: 'POST',
+            params: {'email': email, 'pass': password },
+            headers:
+            {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
 
-        var singup = Ext.create('MStore.view.profile.userProfile',{});
-        singup.show();
-        Ext.getCmp('in_FSignin').destroy();
+            success: function(response, opts) {
+                var getdataserver = response.responseText;
+                if(getdataserver === "rid777")
+                {
+                    // >>>>>>>>>>>>>>>>> If Not Found or any error <<<<<<<<<<<<<<<<<
+                    var vv = Ext.getCmp('in_status').setText('Status: Wrong user name and password');
+                    alert('Wrong user name and password');
+                }else
+                {
+
+                    // >>>>>>>>>>>>>>>>> If No error and connection is successful <<<<<<<<<<<<<<<<<
+                    var sto = Ext.getStore('userInfos');
+                    var dd = Ext.decode(getdataserver);
+                    console.log(dd);
+                    sto.loadRawData(dd, true);
+
+                    var singup = Ext.create('MStore.view.profile.userProfile',{});
+                    singup.show();
+                    Ext.getCmp('in_FSignin').destroy();
+                }
+
+            },
+
+            failure: function(response, opts) {
+                console.log('server-side failure with status code ' + response.status);
+            }
+        });
+
     }
 
 });

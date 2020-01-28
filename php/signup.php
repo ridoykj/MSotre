@@ -1,23 +1,30 @@
 <?php
 // ------------------------------------------------------------------------------
-$userid = "";
+$name = "";
+$email = "";
+$birthday = "";
+$gender = "";
 $pass = "";
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $userid = $_POST["userid"];
-  $pass = $_POST["password"];
-}
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = $_POST["name"];
+  $email = $_POST["email"];
+  $birthday = $_POST["birthday"];
+  $gender = $_POST["gender"];
+  $pass = $_POST["pass"];
+}
+echo $name;
 // ------------------------------------------------------------------------------
 
 $dbUserName = 'root';
 $dbUserPass = '';
 $dbServerHost = 'localhost';
-$dbDataBaseName = 'userinfo';
-echo $userid.'ha ha >> '.$pass;
+$dbDataBaseName = 'alluserinfo';
+echo $name.'ha ha >> '.$pass;
 // ------------------------------------------------------------------------------
 
 $connect = mysqli_connect($dbServerHost, $dbUserName, $dbUserPass, $dbDataBaseName);
-$sql = "INSERT INTO `userdata` (`userid`, `pass`) VALUES ('".$userid."', '".$pass."');";
+$sql = "INSERT INTO `userdata` (`name`, `email`, `birthday`, `gender`, `pass`) VALUES ('".$name."', '".$email."', '".$birthday."', '".$gender."', '".$pass."');";
 $result = mysqli_query($connect, $sql);
 
 // ------------------------------------------------------------------------------

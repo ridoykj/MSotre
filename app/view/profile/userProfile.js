@@ -25,10 +25,8 @@ Ext.define('MStore.view.profile.userProfile', {
         'Ext.tab.Tab',
         'Ext.grid.Panel',
         'Ext.view.Table',
-        'Ext.grid.column.Number',
         'Ext.grid.column.Template',
-        'Ext.XTemplate',
-        'Ext.grid.column.Date'
+        'Ext.XTemplate'
     ],
 
     controller: 'profile.userprofile',
@@ -106,15 +104,18 @@ Ext.define('MStore.view.profile.userProfile', {
                 {
                     xtype: 'panel',
                     id: 'us_T1',
-                    width: 610
+                    width: 610,
+                    title: 'My Tab'
                 },
                 {
                     xtype: 'panel',
-                    id: 'us_T2'
+                    id: 'us_T2',
+                    title: 'My Tab'
                 },
                 {
                     xtype: 'panel',
                     id: 'us_T3',
+                    title: 'My Tab',
                     items: [
                         {
                             xtype: 'gridpanel',
@@ -122,7 +123,7 @@ Ext.define('MStore.view.profile.userProfile', {
                             store: 'userInfos',
                             columns: [
                                 {
-                                    xtype: 'numbercolumn',
+                                    xtype: 'gridcolumn',
                                     dataIndex: 'id',
                                     text: 'ID'
                                 },
@@ -141,8 +142,8 @@ Ext.define('MStore.view.profile.userProfile', {
                                 },
                                 {
                                     xtype: 'gridcolumn',
-                                    dataIndex: 'password',
-                                    text: 'Password'
+                                    dataIndex: 'birthday',
+                                    text: 'Birthday'
                                 },
                                 {
                                     xtype: 'gridcolumn',
@@ -150,10 +151,9 @@ Ext.define('MStore.view.profile.userProfile', {
                                     text: 'Gender'
                                 },
                                 {
-                                    xtype: 'datecolumn',
-                                    dataIndex: 'birthDate',
-                                    text: 'Birth Date',
-                                    format: 'm/j/Y'
+                                    xtype: 'gridcolumn',
+                                    dataIndex: 'pass',
+                                    text: 'Pass'
                                 }
                             ]
                         }

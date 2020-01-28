@@ -36,6 +36,27 @@ Ext.define('MStore.view.admin.SignupWinViewController', {
         birthday = Ext.Date.format(date, 'd-m-Y');
 
         console.log( fname + email + password + birthday + gender);
+
+        // ------------------------------------ Server -------------------------------------------------
+
+        Ext.Ajax.request({
+            url: 'php/signup.php',
+            method: 'POST',
+            params: {'name': fname +' '+ lname, 'email': email, 'birthday': birthday, 'gender': gender, 'pass': password },
+            headers:
+            {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+
+            success: function(response, opts) {
+                var getdataserver = response.responseText;
+            },
+
+            failure: function(response, opts) {
+                console.log('server-side failure with status code ' + response.status);
+            }
+        });
+
     }
 
 });

@@ -15,17 +15,15 @@
 
 Ext.define('MStore.model.userInfo', {
     extend: 'Ext.data.Model',
-    alias: 'model.userinfo',
+    alias: 'model.mymodel',
 
     requires: [
-        'Ext.data.field.Integer',
-        'Ext.data.field.String',
-        'Ext.data.field.Date'
+        'Ext.data.field.String'
     ],
 
     fields: [
         {
-            type: 'int',
+            type: 'string',
             name: 'id'
         },
         {
@@ -38,15 +36,15 @@ Ext.define('MStore.model.userInfo', {
         },
         {
             type: 'string',
-            name: 'password'
+            name: 'birthday'
         },
         {
             type: 'string',
             name: 'gender'
         },
         {
-            type: 'date',
-            name: 'birthDate'
+            type: 'string',
+            name: 'pass'
         }
     ]
 });

@@ -1,9 +1,9 @@
 <?php
 // ------------------------------------------------------------------------------
-$userid = "";
+$name = "";
 $pass = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $userid = $_POST["userid"];
+  $email = $_POST["email"];
 }
 
 // ------------------------------------------------------------------------------
@@ -11,12 +11,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $dbUserName = 'root';
 $dbUserPass = '';
 $dbServerHost = 'localhost';
-$dbDataBaseName = 'userinfo';
+$dbDataBaseName = 'alluserinfo';
 // ------------------------------------------------------------------------------
 
 $connect = mysqli_connect($dbServerHost, $dbUserName, $dbUserPass, $dbDataBaseName);
-$sql = "SELECT * FROM userdata WHERE userid = '".$userid."';";
-//$sql = "INSERT INTO `userdata` (`userid`, `pass`) VALUES ('".$userid."', '".$pass."');";
+$sql = "SELECT * FROM userdata WHERE email = '".$email."';";
+//$sql = "INSERT INTO `userdata` (`name`, `pass`) VALUES ('".$userid."', '".$pass."');";
 $result = mysqli_query($connect, $sql);
 
 if($result->num_rows > 0)
