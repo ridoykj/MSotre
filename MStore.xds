@@ -7,7 +7,7 @@
             "frameworkVersion": "6.5.3.57"
         },
         "urlPrefixTemplate": "http://localhost:{port}/{path}",
-        "urlPrefix": "http://localhost:59608/",
+        "urlPrefix": "http://localhost:49727/",
         "canvasControls": {
             "viewportSize": {
                 "name": "Auto Expand",
@@ -31,12 +31,22 @@
     "upgradeVersion": 310000000001,
     "framework": "ext65",
     "viewOrderMap": {
-        "view": [],
+        "view": [
+            "adf661bc-f237-4843-b80f-9887799980d1",
+            "d63bda81-5599-49b6-8373-ed004a831165",
+            "06597662-61b8-40c8-9fe0-ebe18b34819e",
+            "e4770820-f45f-4e47-a919-a06b1d2a4a35",
+            "f9e0996d-6d66-4d40-829f-f3a8f6d1fec7",
+            "329eff33-1c7d-4893-ac34-19f81ee9993e",
+            "a89e5e5c-c475-40c0-b205-ab177c79be47",
+            "07509f46-fcf0-40a4-99e7-31716d779552",
+            "d34c3d0b-14b6-4d32-ba35-ca6ad25d94d3"
+        ],
         "store": [],
         "controller": [],
         "model": [],
         "resource": [
-            "78a245fb-3aa9-4434-bcd9-97545e2e78ee",
+            "4d348963-43fe-415c-a457-b2345c316a57",
             "b206fa06-99b3-4188-ad52-97865245fd44",
             "6815af71-0a50-4526-a356-0fa9be448345"
         ],

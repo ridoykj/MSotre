@@ -1,0 +1,28 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userAlias": "admin.singinwin",
+        "designer|userClassName": "admin.SinginWin",
+        "height": 250,
+        "layout": "center",
+        "width": 400
+    },
+    "configAlternates": {
+        "designer|initialView": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "layout": "string",
+        "width": "auto"
+    },
+    "name": "MyViewport",
+    "designerId": "adf661bc-f237-4843-b80f-9887799980d1",
+    "viewControllerInstanceId": "06597662-61b8-40c8-9fe0-ebe18b34819e",
+    "viewModelInstanceId": "d63bda81-5599-49b6-8373-ed004a831165"
+}

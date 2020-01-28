@@ -6,10 +6,16 @@
     },
     "codeClass": null,
     "userConfig": {
-        "name": "MStore"
+        "name": "MStore",
+        "views": [
+            "admin.SinginWin",
+            "admin.SignupWin",
+            "admin.Signin"
+        ]
     },
     "configAlternates": {
-        "name": "string"
+        "name": "string",
+        "views": "typedarray"
     },
     "name": "Application",
     "designerId": "application"

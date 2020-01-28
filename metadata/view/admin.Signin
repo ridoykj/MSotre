@@ -1,0 +1,26 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "admin.signin",
+        "designer|userClassName": "admin.Signin",
+        "height": 430,
+        "title": "My Window",
+        "width": 550
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "title": "string",
+        "width": "auto"
+    },
+    "name": "MyWindow",
+    "designerId": "a89e5e5c-c475-40c0-b205-ab177c79be47",
+    "viewControllerInstanceId": "d34c3d0b-14b6-4d32-ba35-ca6ad25d94d3",
+    "viewModelInstanceId": "07509f46-fcf0-40a4-99e7-31716d779552"
+}
