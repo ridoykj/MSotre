@@ -30,6 +30,7 @@ Ext.define('MStore.view.admin.SignupWin', {
         type: 'admin.signupwin'
     },
     height: 250,
+    id: 'up_FSignUP',
     width: 400,
     layout: 'center',
 
@@ -68,11 +69,13 @@ Ext.define('MStore.view.admin.SignupWin', {
                     items: [
                         {
                             xtype: 'button',
+                            id: 'up_BBack',
                             width: 182,
                             text: 'Back'
                         },
                         {
                             xtype: 'button',
+                            id: 'up_BSubmit',
                             width: 190,
                             text: 'Submit'
                         }
@@ -83,27 +86,32 @@ Ext.define('MStore.view.admin.SignupWin', {
                 {
                     xtype: 'textfield',
                     anchor: '100%',
+                    id: 'up_fname',
                     fieldLabel: 'First Name'
                 },
                 {
                     xtype: 'textfield',
                     anchor: '100%',
+                    id: 'up_lname',
                     fieldLabel: 'Last Name'
                 },
                 {
                     xtype: 'textfield',
                     anchor: '100%',
+                    id: 'up_email',
                     fieldLabel: 'Email',
                     inputType: 'email'
                 },
                 {
                     xtype: 'datefield',
                     anchor: '100%',
+                    id: 'up_birthday',
                     fieldLabel: 'Birthday'
                 },
                 {
                     xtype: 'combobox',
                     anchor: '100%',
+                    id: 'up_gender',
                     fieldLabel: 'Gender',
                     displayField: 'typeID',
                     queryMode: 'local',
@@ -113,12 +121,14 @@ Ext.define('MStore.view.admin.SignupWin', {
                 {
                     xtype: 'textfield',
                     anchor: '100%',
+                    id: 'up_pass',
                     fieldLabel: 'Password',
                     inputType: 'password'
                 },
                 {
                     xtype: 'textfield',
                     anchor: '100%',
+                    id: 'up_repass',
                     fieldLabel: 'Re-Passwrod',
                     inputType: 'password'
                 }

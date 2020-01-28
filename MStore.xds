@@ -7,7 +7,7 @@
             "frameworkVersion": "6.5.3.57"
         },
         "urlPrefixTemplate": "http://localhost:{port}/{path}",
-        "urlPrefix": "http://localhost:49959/",
+        "urlPrefix": "http://localhost:51913/",
         "canvasControls": {
             "viewportSize": {
                 "name": "Auto Expand",
@@ -40,7 +40,10 @@
             "329eff33-1c7d-4893-ac34-19f81ee9993e",
             "a89e5e5c-c475-40c0-b205-ab177c79be47",
             "07509f46-fcf0-40a4-99e7-31716d779552",
-            "d34c3d0b-14b6-4d32-ba35-ca6ad25d94d3"
+            "d34c3d0b-14b6-4d32-ba35-ca6ad25d94d3",
+            "750d9961-3bfc-43c9-bd98-18c8d307ee54",
+            "bc20cd74-7750-46e1-bb0f-cb1b5f1597ff",
+            "de6ab143-ef12-41e6-82d5-f4ad8b747ae1"
         ],
         "store": [
             "474cd976-717d-4d78-9053-6bd859e72d6b"
@@ -50,7 +53,7 @@
             "b4fe076b-97d1-4c41-82c1-03292575457d"
         ],
         "resource": [
-            "951980f6-cf3d-4686-b282-0dc07e7ff0ee",
+            "9e55cea2-7185-4dfc-8b46-5e4144e24376",
             "b206fa06-99b3-4188-ad52-97865245fd44",
             "6815af71-0a50-4526-a356-0fa9be448345"
         ],

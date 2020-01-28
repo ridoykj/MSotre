@@ -31,6 +31,7 @@ Ext.define('MStore.view.admin.Signin', {
     },
     autoShow: true,
     height: 430,
+    id: 'in_FSignin',
     width: 383,
     title: 'Sign In',
 
@@ -62,6 +63,7 @@ Ext.define('MStore.view.admin.Signin', {
                     xtype: 'textfield',
                     x: 40,
                     y: 70,
+                    id: 'in_email',
                     width: 280,
                     fieldLabel: 'Email',
                     inputType: 'email'
@@ -70,6 +72,7 @@ Ext.define('MStore.view.admin.Signin', {
                     xtype: 'textfield',
                     x: 40,
                     y: 120,
+                    id: 'in_pass',
                     width: 280,
                     fieldLabel: 'Password',
                     inputType: 'password'
@@ -78,6 +81,7 @@ Ext.define('MStore.view.admin.Signin', {
                     xtype: 'label',
                     x: 140,
                     y: 170,
+                    id: 'in_status',
                     text: 'Status:'
                 }
             ]
@@ -97,11 +101,13 @@ Ext.define('MStore.view.admin.Signin', {
             items: [
                 {
                     xtype: 'button',
+                    id: 'in_BSignUp',
                     width: 180,
                     text: 'Sign Up'
                 },
                 {
                     xtype: 'button',
+                    id: 'in_BSignIn',
                     width: 200,
                     text: 'Sign In'
                 }

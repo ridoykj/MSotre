@@ -110,6 +110,15 @@
         "d34c3d0b-14b6-4d32-ba35-ca6ad25d94d3": {
             "id": "d34c3d0b-14b6-4d32-ba35-ca6ad25d94d3"
         },
+        "750d9961-3bfc-43c9-bd98-18c8d307ee54": {
+            "id": "750d9961-3bfc-43c9-bd98-18c8d307ee54"
+        },
+        "bc20cd74-7750-46e1-bb0f-cb1b5f1597ff": {
+            "id": "bc20cd74-7750-46e1-bb0f-cb1b5f1597ff"
+        },
+        "de6ab143-ef12-41e6-82d5-f4ad8b747ae1": {
+            "id": "de6ab143-ef12-41e6-82d5-f4ad8b747ae1"
+        },
         "store": true,
         "474cd976-717d-4d78-9053-6bd859e72d6b": {
             "id": "474cd976-717d-4d78-9053-6bd859e72d6b",
@@ -130,14 +139,14 @@
         },
         "controller": true,
         "resource": true,
-        "951980f6-cf3d-4686-b282-0dc07e7ff0ee": {
-            "id": "951980f6-cf3d-4686-b282-0dc07e7ff0ee",
+        "9e55cea2-7185-4dfc-8b46-5e4144e24376": {
+            "id": "9e55cea2-7185-4dfc-8b46-5e4144e24376",
             "cn": [
                 {
-                    "id": "a63c56e1-40ad-4b85-bb46-cd55f60f1d81",
+                    "id": "661feced-344d-4638-80f1-e0f251b42ef8",
                     "cn": [
                         {
-                            "id": "95688dd2-0390-4a9d-a4f4-043d01326928"
+                            "id": "d453d2ce-e3d7-47a7-a921-0a84d73b72cf"
                         }
                     ]
                 }
@@ -155,15 +164,16 @@
             "adf661bc-f237-4843-b80f-9887799980d1",
             "e4770820-f45f-4e47-a919-a06b1d2a4a35",
             "a89e5e5c-c475-40c0-b205-ab177c79be47",
-            "474cd976-717d-4d78-9053-6bd859e72d6b"
+            "474cd976-717d-4d78-9053-6bd859e72d6b",
+            "750d9961-3bfc-43c9-bd98-18c8d307ee54"
         ]
     },
     "canvasState": {
-        "topInstance": "a89e5e5c-c475-40c0-b205-ab177c79be47"
+        "topInstance": "e4770820-f45f-4e47-a919-a06b1d2a4a35"
     },
     "inspectorState": {
-        "topInstance": null,
-        "selectedInstance": null
+        "topInstance": "e4770820-f45f-4e47-a919-a06b1d2a4a35",
+        "selectedInstance": "e4770820-f45f-4e47-a919-a06b1d2a4a35"
     },
     "editMode": "design",
     "userSettings": {

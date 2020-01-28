@@ -16,7 +16,8 @@
         "views": [
             "admin.SinginWin",
             "admin.SignupWin",
-            "admin.Signin"
+            "admin.Signin",
+            "profile.userProfile"
         ]
     },
     "configAlternates": {

@@ -12,6 +12,7 @@
         "designer|userAlias": "admin.signin",
         "designer|userClassName": "admin.Signin",
         "height": 430,
+        "id": "in_FSignin",
         "layout": "vbox",
         "title": "Sign In",
         "width": 383
@@ -25,7 +26,8 @@
         "autoShow": "boolean",
         "container|align": "string",
         "designer|initialView": "boolean",
-        "layout": "string"
+        "layout": "string",
+        "id": "string"
     },
     "name": "MyWindow",
     "designerId": "a89e5e5c-c475-40c0-b205-ab177c79be47",
@@ -103,6 +105,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "fieldLabel": "Email",
+                        "id": "in_email",
                         "inputType": "email",
                         "layout|x": 40,
                         "layout|y": 70,
@@ -113,7 +116,8 @@
                         "inputType": "string",
                         "layout|x": "number",
                         "layout|y": "number",
-                        "width": "auto"
+                        "width": "auto",
+                        "id": "string"
                     },
                     "name": "MyTextField5",
                     "designerId": "f661c9cd-0a95-438a-8bbd-1798b215610e"
@@ -127,6 +131,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "fieldLabel": "Password",
+                        "id": "in_pass",
                         "inputType": "password",
                         "layout|x": 40,
                         "layout|y": 120,
@@ -137,7 +142,8 @@
                         "inputType": "string",
                         "layout|x": "number",
                         "layout|y": "number",
-                        "width": "auto"
+                        "width": "auto",
+                        "id": "string"
                     },
                     "name": "MyTextField6",
                     "designerId": "4c475e2b-1db8-41f5-a7c9-db1f798b3e8f"
@@ -150,6 +156,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "id": "in_status",
                         "layout|x": 140,
                         "layout|y": 170,
                         "text": "Status:"
@@ -157,7 +164,8 @@
                     "configAlternates": {
                         "layout|x": "number",
                         "layout|y": "number",
-                        "text": "string"
+                        "text": "string",
+                        "id": "string"
                     },
                     "name": "MyLabel",
                     "designerId": "bedf3e58-69ff-4751-afc1-735a3e36f95e"
@@ -198,12 +206,14 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "id": "in_BSignUp",
                         "text": "Sign Up",
                         "width": 180
                     },
                     "configAlternates": {
                         "text": "string",
-                        "width": "auto"
+                        "width": "auto",
+                        "id": "string"
                     },
                     "name": "MyButton2",
                     "designerId": "3e2a14b6-2bee-4c05-9835-d197d87bf74e"
@@ -216,12 +226,14 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "id": "in_BSignIn",
                         "text": "Sign In",
                         "width": 200
                     },
                     "configAlternates": {
                         "text": "string",
-                        "width": "auto"
+                        "width": "auto",
+                        "id": "string"
                     },
                     "name": "MyButton3",
                     "designerId": "6dcf90bc-da33-40a9-bae7-a8571a830250"
