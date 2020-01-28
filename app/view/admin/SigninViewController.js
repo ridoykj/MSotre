@@ -15,5 +15,18 @@
 
 Ext.define('MStore.view.admin.SigninViewController', {
     extend: 'Ext.app.ViewController',
-    alias: 'controller.admin.signin'
+    alias: 'controller.admin.signin',
+
+    onIn_BSignUpClick: function(button, e, eOpts) {
+        var singup = Ext.create('MStore.view.admin.SignupWin',{});
+        singup.show();
+        Ext.getCmp('in_FSignin').destroy();
+    },
+
+    onIn_BSignInClick: function(button, e, eOpts) {
+        var email = Ext.getCmp('in_email').value;
+        var password = Ext.getCmp('in_pass').value;
+        console.log(email + password);
+    }
+
 });

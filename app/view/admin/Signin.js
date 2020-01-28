@@ -19,6 +19,7 @@ Ext.define('MStore.view.admin.Signin', {
 
     requires: [
         'MStore.view.admin.SigninViewModel',
+        'MStore.view.admin.SigninViewController',
         'Ext.panel.Panel',
         'Ext.Img',
         'Ext.form.field.Text',
@@ -26,6 +27,7 @@ Ext.define('MStore.view.admin.Signin', {
         'Ext.button.Button'
     ],
 
+    controller: 'admin.signin',
     viewModel: {
         type: 'admin.signin'
     },
@@ -103,13 +105,19 @@ Ext.define('MStore.view.admin.Signin', {
                     xtype: 'button',
                     id: 'in_BSignUp',
                     width: 180,
-                    text: 'Sign Up'
+                    text: 'Sign Up',
+                    listeners: {
+                        click: 'onIn_BSignUpClick'
+                    }
                 },
                 {
                     xtype: 'button',
                     id: 'in_BSignIn',
                     width: 200,
-                    text: 'Sign In'
+                    text: 'Sign In',
+                    listeners: {
+                        click: 'onIn_BSignInClick'
+                    }
                 }
             ]
         }

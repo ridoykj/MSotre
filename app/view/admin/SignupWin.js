@@ -19,6 +19,7 @@ Ext.define('MStore.view.admin.SignupWin', {
 
     requires: [
         'MStore.view.admin.SignupWinViewModel',
+        'MStore.view.admin.SignupWinViewController',
         'Ext.form.Panel',
         'Ext.Img',
         'Ext.form.field.Date',
@@ -26,6 +27,7 @@ Ext.define('MStore.view.admin.SignupWin', {
         'Ext.button.Button'
     ],
 
+    controller: 'admin.signupwin',
     viewModel: {
         type: 'admin.signupwin'
     },
@@ -71,13 +73,19 @@ Ext.define('MStore.view.admin.SignupWin', {
                             xtype: 'button',
                             id: 'up_BBack',
                             width: 182,
-                            text: 'Back'
+                            text: 'Back',
+                            listeners: {
+                                click: 'onUp_BBackClick'
+                            }
                         },
                         {
                             xtype: 'button',
                             id: 'up_BSubmit',
                             width: 190,
-                            text: 'Submit'
+                            text: 'Submit',
+                            listeners: {
+                                click: 'onUp_BSubmitClick'
+                            }
                         }
                     ]
                 }
@@ -106,7 +114,8 @@ Ext.define('MStore.view.admin.SignupWin', {
                     xtype: 'datefield',
                     anchor: '100%',
                     id: 'up_birthday',
-                    fieldLabel: 'Birthday'
+                    fieldLabel: 'Birthday',
+                    format: 'd/m/Y'
                 },
                 {
                     xtype: 'combobox',

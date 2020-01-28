@@ -216,7 +216,35 @@
                         "id": "string"
                     },
                     "name": "MyButton2",
-                    "designerId": "3e2a14b6-2bee-4c05-9835-d197d87bf74e"
+                    "designerId": "3e2a14b6-2bee-4c05-9835-d197d87bf74e",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onIn_BSignUpClick",
+                                "implHandler": [
+                                    "var singup = Ext.create('MStore.view.admin.SignupWin',{});",
+                                    "singup.show();",
+                                    "Ext.getCmp('in_FSignin').destroy();"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onIn_BSignUpClick",
+                            "designerId": "a5d5c3bc-a535-4e03-85ce-251cd7a1c477"
+                        }
+                    ]
                 },
                 {
                     "type": "Ext.button.Button",
@@ -236,7 +264,35 @@
                         "id": "string"
                     },
                     "name": "MyButton3",
-                    "designerId": "6dcf90bc-da33-40a9-bae7-a8571a830250"
+                    "designerId": "6dcf90bc-da33-40a9-bae7-a8571a830250",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onIn_BSignInClick",
+                                "implHandler": [
+                                    "var email = Ext.getCmp('in_email').value;",
+                                    "var password = Ext.getCmp('in_pass').value;",
+                                    "console.log(email + password);"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onIn_BSignInClick",
+                            "designerId": "abe6f5eb-60dc-4d91-b74d-9e62f59dff33"
+                        }
+                    ]
                 }
             ]
         }

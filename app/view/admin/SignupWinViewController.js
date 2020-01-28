@@ -15,5 +15,27 @@
 
 Ext.define('MStore.view.admin.SignupWinViewController', {
     extend: 'Ext.app.ViewController',
-    alias: 'controller.admin.signupwin'
+    alias: 'controller.admin.signupwin',
+
+    onUp_BBackClick: function(button, e, eOpts) {
+        var singup = Ext.create('MStore.view.admin.Signin',{});
+        singup.show();
+        Ext.getCmp('up_FSignUP').destroy();
+    },
+
+    onUp_BSubmitClick: function(button, e, eOpts) {
+        var fname = Ext.getCmp('up_fname').value;
+        var lname = Ext.getCmp('up_lname').value;
+        var email = Ext.getCmp('up_email').value;
+        var gender = Ext.getCmp('up_gender').value;
+        var password = Ext.getCmp('up_pass').value;
+        var repassword = Ext.getCmp('up_repass').value;
+
+        var birthday = Ext.getCmp('up_birthday').getValue();
+        var date = new Date(birthday);
+        birthday = Ext.Date.format(date, 'd-m-Y');
+
+        console.log( fname + email + password + birthday + gender);
+    }
+
 });

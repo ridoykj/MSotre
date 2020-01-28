@@ -161,12 +161,14 @@
                     "codeClass": null,
                     "userConfig": {
                         "fieldLabel": "Birthday",
+                        "format": "d/m/Y",
                         "id": "up_birthday",
                         "layout|anchor": "100%"
                     },
                     "configAlternates": {
                         "fieldLabel": "string",
                         "layout|anchor": "string",
+                        "format": "string",
                         "id": "string"
                     },
                     "name": "MyDateField",
@@ -288,7 +290,35 @@
                                 "id": "string"
                             },
                             "name": "MyButton",
-                            "designerId": "528dddd2-4d87-40e7-a4b3-e8b29958da58"
+                            "designerId": "528dddd2-4d87-40e7-a4b3-e8b29958da58",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onUp_BBackClick",
+                                        "implHandler": [
+                                            "var singup = Ext.create('MStore.view.admin.Signin',{});",
+                                            "singup.show();",
+                                            "Ext.getCmp('up_FSignUP').destroy();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onUp_BBackClick",
+                                    "designerId": "d75a6486-6101-4017-9831-55e3fa9c66c8"
+                                }
+                            ]
                         },
                         {
                             "type": "Ext.button.Button",
@@ -308,7 +338,44 @@
                                 "id": "string"
                             },
                             "name": "MyButton1",
-                            "designerId": "47c3bd08-014e-4373-abae-1435d7afd9c3"
+                            "designerId": "47c3bd08-014e-4373-abae-1435d7afd9c3",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onUp_BSubmitClick",
+                                        "implHandler": [
+                                            "var fname = Ext.getCmp('up_fname').value;",
+                                            "var lname = Ext.getCmp('up_lname').value;",
+                                            "var email = Ext.getCmp('up_email').value;",
+                                            "var gender = Ext.getCmp('up_gender').value;",
+                                            "var password = Ext.getCmp('up_pass').value;",
+                                            "var repassword = Ext.getCmp('up_repass').value;",
+                                            "",
+                                            "var birthday = Ext.getCmp('up_birthday').getValue();",
+                                            "var date = new Date(birthday);",
+                                            "birthday = Ext.Date.format(date, 'd-m-Y');",
+                                            "",
+                                            "console.log( fname + email + password + birthday + gender);"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onUp_BSubmitClick",
+                                    "designerId": "6110e3dd-570b-4b2f-a12b-8b367f52dfd3"
+                                }
+                            ]
                         }
                     ]
                 }
