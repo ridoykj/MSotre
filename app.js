@@ -34,7 +34,7 @@ Ext.application({
     name: 'MStore',
 
     launch: function() {
-        Ext.create('MStore.view.admin.SignupWin');
+        Ext.create('MStore.view.admin.Signin', {renderTo: Ext.getBody()});
     }
 
 });

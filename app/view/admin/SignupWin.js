@@ -39,7 +39,7 @@ Ext.define('MStore.view.admin.SignupWin', {
             height: 518,
             width: 367,
             bodyPadding: 10,
-            title: 'My Form',
+            title: 'Sign Up',
             dockedItems: [
                 {
                     xtype: 'panel',
@@ -93,7 +93,8 @@ Ext.define('MStore.view.admin.SignupWin', {
                 {
                     xtype: 'textfield',
                     anchor: '100%',
-                    fieldLabel: 'Email'
+                    fieldLabel: 'Email',
+                    inputType: 'email'
                 },
                 {
                     xtype: 'datefield',

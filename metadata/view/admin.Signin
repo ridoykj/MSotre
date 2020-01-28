@@ -6,21 +6,227 @@
     },
     "codeClass": null,
     "userConfig": {
+        "autoShow": true,
+        "container|align": "stretch",
+        "designer|initialView": true,
         "designer|userAlias": "admin.signin",
         "designer|userClassName": "admin.Signin",
         "height": 430,
-        "title": "My Window",
-        "width": 550
+        "layout": "vbox",
+        "title": "Sign In",
+        "width": 383
     },
     "configAlternates": {
         "designer|userAlias": "string",
         "designer|userClassName": "string",
         "height": "auto",
         "title": "string",
-        "width": "auto"
+        "width": "auto",
+        "autoShow": "boolean",
+        "container|align": "string",
+        "designer|initialView": "boolean",
+        "layout": "string"
     },
     "name": "MyWindow",
     "designerId": "a89e5e5c-c475-40c0-b205-ab177c79be47",
     "viewControllerInstanceId": "d34c3d0b-14b6-4d32-ba35-ca6ad25d94d3",
-    "viewModelInstanceId": "07509f46-fcf0-40a4-99e7-31716d779552"
+    "viewModelInstanceId": "07509f46-fcf0-40a4-99e7-31716d779552",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 128,
+                "layout": "center",
+                "layout|flex": 0.27
+            },
+            "configAlternates": {
+                "height": "auto",
+                "layout": "string",
+                "layout|flex": "number"
+            },
+            "name": "MyPanel2",
+            "designerId": "83e90dce-66b8-4aa8-a054-e1b8a8d6e773",
+            "cn": [
+                {
+                    "type": "Ext.Img",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 82,
+                        "src": "ico/login.png",
+                        "width": 74
+                    },
+                    "configAlternates": {
+                        "height": "auto",
+                        "src": "uri",
+                        "width": "auto"
+                    },
+                    "name": "MyImg1",
+                    "designerId": "e3a552bd-9b58-4a34-8bf4-8a9da8bac0c5"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|snapToGrid": 10,
+                "layout": "absolute",
+                "layout|flex": 0.6
+            },
+            "configAlternates": {
+                "designer|snapToGrid": "number",
+                "layout": "string",
+                "layout|flex": "number"
+            },
+            "name": "MyPanel3",
+            "designerId": "d76333dc-b0e4-42c8-ad6b-d39f45fb9dbd",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Email",
+                        "inputType": "email",
+                        "layout|x": 40,
+                        "layout|y": 70,
+                        "width": 280
+                    },
+                    "configAlternates": {
+                        "fieldLabel": "string",
+                        "inputType": "string",
+                        "layout|x": "number",
+                        "layout|y": "number",
+                        "width": "auto"
+                    },
+                    "name": "MyTextField5",
+                    "designerId": "f661c9cd-0a95-438a-8bbd-1798b215610e"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Password",
+                        "inputType": "password",
+                        "layout|x": 40,
+                        "layout|y": 120,
+                        "width": 280
+                    },
+                    "configAlternates": {
+                        "fieldLabel": "string",
+                        "inputType": "string",
+                        "layout|x": "number",
+                        "layout|y": "number",
+                        "width": "auto"
+                    },
+                    "name": "MyTextField6",
+                    "designerId": "4c475e2b-1db8-41f5-a7c9-db1f798b3e8f"
+                },
+                {
+                    "type": "Ext.form.Label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|x": 140,
+                        "layout|y": 170,
+                        "text": "Status:"
+                    },
+                    "configAlternates": {
+                        "layout|x": "number",
+                        "layout|y": "number",
+                        "text": "string"
+                    },
+                    "name": "MyLabel",
+                    "designerId": "bedf3e58-69ff-4751-afc1-735a3e36f95e"
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "stretch",
+                "dock": "bottom",
+                "height": 40,
+                "layout": "hbox",
+                "layout|flex": 0.15,
+                "width": 379
+            },
+            "configAlternates": {
+                "container|align": "string",
+                "dock": "string",
+                "height": "auto",
+                "layout": "string",
+                "layout|flex": "number",
+                "width": "auto"
+            },
+            "name": "MyPanel4",
+            "designerId": "b78f5b2c-201a-496e-b4e7-ebb33a246c25",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Sign Up",
+                        "width": 180
+                    },
+                    "configAlternates": {
+                        "text": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyButton2",
+                    "designerId": "3e2a14b6-2bee-4c05-9835-d197d87bf74e"
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "Sign In",
+                        "width": 200
+                    },
+                    "configAlternates": {
+                        "text": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyButton3",
+                    "designerId": "6dcf90bc-da33-40a9-bae7-a8571a830250"
+                }
+            ]
+        }
+    ]
 }

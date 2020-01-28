@@ -18,14 +18,95 @@ Ext.define('MStore.view.admin.Signin', {
     alias: 'widget.admin.signin',
 
     requires: [
-        'MStore.view.admin.SigninViewModel'
+        'MStore.view.admin.SigninViewModel',
+        'Ext.panel.Panel',
+        'Ext.Img',
+        'Ext.form.field.Text',
+        'Ext.form.Label',
+        'Ext.button.Button'
     ],
 
     viewModel: {
         type: 'admin.signin'
     },
+    autoShow: true,
     height: 430,
-    width: 550,
-    title: 'My Window'
+    width: 383,
+    title: 'Sign In',
+
+    layout: {
+        type: 'vbox',
+        align: 'stretch'
+    },
+    items: [
+        {
+            xtype: 'panel',
+            flex: 0.27,
+            height: 128,
+            layout: 'center',
+            items: [
+                {
+                    xtype: 'image',
+                    height: 82,
+                    width: 74,
+                    src: 'ico/login.png'
+                }
+            ]
+        },
+        {
+            xtype: 'panel',
+            flex: 0.6,
+            layout: 'absolute',
+            items: [
+                {
+                    xtype: 'textfield',
+                    x: 40,
+                    y: 70,
+                    width: 280,
+                    fieldLabel: 'Email',
+                    inputType: 'email'
+                },
+                {
+                    xtype: 'textfield',
+                    x: 40,
+                    y: 120,
+                    width: 280,
+                    fieldLabel: 'Password',
+                    inputType: 'password'
+                },
+                {
+                    xtype: 'label',
+                    x: 140,
+                    y: 170,
+                    text: 'Status:'
+                }
+            ]
+        }
+    ],
+    dockedItems: [
+        {
+            xtype: 'panel',
+            flex: 0.15,
+            dock: 'bottom',
+            height: 40,
+            width: 379,
+            layout: {
+                type: 'hbox',
+                align: 'stretch'
+            },
+            items: [
+                {
+                    xtype: 'button',
+                    width: 180,
+                    text: 'Sign Up'
+                },
+                {
+                    xtype: 'button',
+                    width: 200,
+                    text: 'Sign In'
+                }
+            ]
+        }
+    ]
 
 });

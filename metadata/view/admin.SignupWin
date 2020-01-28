@@ -6,7 +6,6 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|initialView": true,
         "designer|userAlias": "admin.signupwin",
         "designer|userClassName": "admin.SignupWin",
         "height": 250,
@@ -18,8 +17,7 @@
         "designer|userClassName": "string",
         "height": "auto",
         "layout": "string",
-        "width": "auto",
-        "designer|initialView": "boolean"
+        "width": "auto"
     },
     "name": "MyViewport",
     "designerId": "e4770820-f45f-4e47-a919-a06b1d2a4a35",
@@ -36,7 +34,7 @@
             "userConfig": {
                 "bodyPadding": 10,
                 "height": 518,
-                "title": "My Form",
+                "title": "Sign Up",
                 "width": 367
             },
             "configAlternates": {
@@ -135,11 +133,13 @@
                     "codeClass": null,
                     "userConfig": {
                         "fieldLabel": "Email",
+                        "inputType": "email",
                         "layout|anchor": "100%"
                     },
                     "configAlternates": {
                         "fieldLabel": "string",
-                        "layout|anchor": "string"
+                        "layout|anchor": "string",
+                        "inputType": "string"
                     },
                     "name": "MyTextField2",
                     "designerId": "5293d6c5-82c9-4b03-bd76-4db6da3de104"

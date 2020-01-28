@@ -67,7 +67,42 @@
             "id": "329eff33-1c7d-4893-ac34-19f81ee9993e"
         },
         "a89e5e5c-c475-40c0-b205-ab177c79be47": {
-            "id": "a89e5e5c-c475-40c0-b205-ab177c79be47"
+            "id": "a89e5e5c-c475-40c0-b205-ab177c79be47",
+            "cn": [
+                {
+                    "id": "83e90dce-66b8-4aa8-a054-e1b8a8d6e773",
+                    "cn": [
+                        {
+                            "id": "e3a552bd-9b58-4a34-8bf4-8a9da8bac0c5"
+                        }
+                    ]
+                },
+                {
+                    "id": "d76333dc-b0e4-42c8-ad6b-d39f45fb9dbd",
+                    "cn": [
+                        {
+                            "id": "f661c9cd-0a95-438a-8bbd-1798b215610e"
+                        },
+                        {
+                            "id": "4c475e2b-1db8-41f5-a7c9-db1f798b3e8f"
+                        },
+                        {
+                            "id": "bedf3e58-69ff-4751-afc1-735a3e36f95e"
+                        }
+                    ]
+                },
+                {
+                    "id": "b78f5b2c-201a-496e-b4e7-ebb33a246c25",
+                    "cn": [
+                        {
+                            "id": "3e2a14b6-2bee-4c05-9835-d197d87bf74e"
+                        },
+                        {
+                            "id": "6dcf90bc-da33-40a9-bae7-a8571a830250"
+                        }
+                    ]
+                }
+            ]
         },
         "07509f46-fcf0-40a4-99e7-31716d779552": {
             "id": "07509f46-fcf0-40a4-99e7-31716d779552"
@@ -124,11 +159,11 @@
         ]
     },
     "canvasState": {
-        "topInstance": "e4770820-f45f-4e47-a919-a06b1d2a4a35"
+        "topInstance": "a89e5e5c-c475-40c0-b205-ab177c79be47"
     },
     "inspectorState": {
-        "topInstance": "e4770820-f45f-4e47-a919-a06b1d2a4a35",
-        "selectedInstance": "e4770820-f45f-4e47-a919-a06b1d2a4a35"
+        "topInstance": null,
+        "selectedInstance": null
     },
     "editMode": "design",
     "userSettings": {
