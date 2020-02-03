@@ -29,9 +29,9 @@ Ext.define('MStore.view.admin.SigninViewController', {
         console.log(email + password);
 
         Ext.Ajax.request({
-            url: 'php/api.php',
+            url: 'php/aapi.php',
             method: 'POST',
-            params: {'email': email, 'pass': password },
+            params: {'request':'login', 'email': email, 'pass': password },
             headers:
             {
                 'Content-Type': 'application/x-www-form-urlencoded'

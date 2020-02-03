@@ -40,9 +40,9 @@ Ext.define('MStore.view.admin.SignupWinViewController', {
         // ------------------------------------ Server -------------------------------------------------
 
         Ext.Ajax.request({
-            url: 'php/signup.php',
+            url: 'php/aapi.php',
             method: 'POST',
-            params: {'name': fname +' '+ lname, 'email': email, 'birthday': birthday, 'gender': gender, 'pass': password },
+            params: {'request': 'create','name': fname +' '+ lname, 'email': email, 'birthday': birthday, 'gender': gender, 'pass': password },
             headers:
             {
                 'Content-Type': 'application/x-www-form-urlencoded'
@@ -50,6 +50,17 @@ Ext.define('MStore.view.admin.SignupWinViewController', {
 
             success: function(response, opts) {
                 var getdataserver = response.responseText;
+                if(getdataserver == 'false')
+                {
+                    Ext.getCmp('up_status').setText('Status: The Email already exists');
+                }
+                else
+                {
+                    var singup = Ext.create('MStore.view.admin.Signin',{});
+                    singup.show();
+                    Ext.getCmp('up_FSignUP').destroy();
+                }
+                console.log('i am work');
             },
 
             failure: function(response, opts) {

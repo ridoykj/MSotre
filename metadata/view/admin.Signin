@@ -149,26 +149,50 @@
                     "designerId": "4c475e2b-1db8-41f5-a7c9-db1f798b3e8f"
                 },
                 {
-                    "type": "Ext.form.Label",
+                    "type": "Ext.panel.Panel",
                     "reference": {
-                        "name": "items",
+                        "name": "dockedItems",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "id": "in_status",
-                        "layout|x": 140,
-                        "layout|y": 170,
-                        "text": "Status:"
+                        "dock": "bottom",
+                        "height": 70,
+                        "layout": "center",
+                        "layout|x": 20,
+                        "layout|y": 190
                     },
                     "configAlternates": {
+                        "dock": "string",
+                        "height": "auto",
+                        "layout": "string",
                         "layout|x": "number",
-                        "layout|y": "number",
-                        "text": "string",
-                        "id": "string"
+                        "layout|y": "number"
                     },
-                    "name": "MyLabel",
-                    "designerId": "bedf3e58-69ff-4751-afc1-735a3e36f95e"
+                    "name": "MyPanel11",
+                    "designerId": "2f4009d3-c62b-4874-8fce-0dc05cfb7fc4",
+                    "cn": [
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "in_status",
+                                "text": "Status:"
+                            },
+                            "configAlternates": {
+                                "layout|x": "number",
+                                "layout|y": "number",
+                                "text": "string",
+                                "id": "string"
+                            },
+                            "name": "MyLabel",
+                            "designerId": "bedf3e58-69ff-4751-afc1-735a3e36f95e"
+                        }
+                    ]
                 }
             ]
         },
@@ -281,9 +305,9 @@
                                     "console.log(email + password);",
                                     "",
                                     "Ext.Ajax.request({",
-                                    "    url: 'php/api.php',",
+                                    "    url: 'php/aapi.php',",
                                     "    method: 'POST',",
-                                    "    params: {'email': email, 'pass': password },",
+                                    "    params: {'request':'login', 'email': email, 'pass': password },",
                                     "    headers:",
                                     "            {",
                                     "                'Content-Type': 'application/x-www-form-urlencoded'",

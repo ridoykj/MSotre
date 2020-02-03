@@ -35,7 +35,7 @@
             "codeClass": null,
             "userConfig": {
                 "bodyPadding": 10,
-                "height": 518,
+                "height": 536,
                 "title": "Sign Up",
                 "width": 367
             },
@@ -76,7 +76,7 @@
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "height": 78,
+                                "height": 88,
                                 "src": "ico/user.png",
                                 "width": 89
                             },
@@ -366,9 +366,9 @@
                                             "// ------------------------------------ Server -------------------------------------------------",
                                             "",
                                             "Ext.Ajax.request({",
-                                            "    url: 'php/signup.php',",
+                                            "    url: 'php/aapi.php',",
                                             "    method: 'POST',",
-                                            "    params: {'name': fname +' '+ lname, 'email': email, 'birthday': birthday, 'gender': gender, 'pass': password },",
+                                            "    params: {'request': 'create','name': fname +' '+ lname, 'email': email, 'birthday': birthday, 'gender': gender, 'pass': password },",
                                             "    headers:",
                                             "            {",
                                             "                'Content-Type': 'application/x-www-form-urlencoded'",
@@ -376,6 +376,17 @@
                                             "",
                                             "    success: function(response, opts) {",
                                             "        var getdataserver = response.responseText;",
+                                            "        if(getdataserver == 'false')",
+                                            "            {",
+                                            "                Ext.getCmp('up_status').setText('Status: The Email already exists');",
+                                            "            }",
+                                            "        else",
+                                            "            {",
+                                            "                var singup = Ext.create('MStore.view.admin.Signin',{});",
+                                            "                singup.show();",
+                                            "                Ext.getCmp('up_FSignUP').destroy();",
+                                            "            }",
+                                            "        console.log('i am work');",
                                             "     },",
                                             "",
                                             "    failure: function(response, opts) {",
@@ -397,6 +408,44 @@
                                     "designerId": "6110e3dd-570b-4b2f-a12b-8b367f52dfd3"
                                 }
                             ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 33,
+                        "layout": "center"
+                    },
+                    "configAlternates": {
+                        "height": "auto",
+                        "layout": "string"
+                    },
+                    "name": "MyPanel10",
+                    "designerId": "e831a3ca-2038-430f-87fe-9239058da6e5",
+                    "cn": [
+                        {
+                            "type": "Ext.form.Label",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "up_status",
+                                "text": "Status:"
+                            },
+                            "configAlternates": {
+                                "id": "string",
+                                "text": "string"
+                            },
+                            "name": "MyLabel1",
+                            "designerId": "3b717fc7-60b8-4a54-9633-0b81ba05c090"
                         }
                     ]
                 }

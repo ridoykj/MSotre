@@ -24,7 +24,8 @@ Ext.define('MStore.view.admin.SignupWin', {
         'Ext.Img',
         'Ext.form.field.Date',
         'Ext.form.field.ComboBox',
-        'Ext.button.Button'
+        'Ext.button.Button',
+        'Ext.form.Label'
     ],
 
     controller: 'admin.signupwin',
@@ -39,7 +40,7 @@ Ext.define('MStore.view.admin.SignupWin', {
     items: [
         {
             xtype: 'form',
-            height: 518,
+            height: 536,
             width: 367,
             bodyPadding: 10,
             title: 'Sign Up',
@@ -52,7 +53,7 @@ Ext.define('MStore.view.admin.SignupWin', {
                     items: [
                         {
                             xtype: 'image',
-                            height: 78,
+                            height: 88,
                             width: 89,
                             src: 'ico/user.png'
                         }
@@ -140,6 +141,18 @@ Ext.define('MStore.view.admin.SignupWin', {
                     id: 'up_repass',
                     fieldLabel: 'Re-Passwrod',
                     inputType: 'password'
+                },
+                {
+                    xtype: 'panel',
+                    height: 33,
+                    layout: 'center',
+                    items: [
+                        {
+                            xtype: 'label',
+                            id: 'up_status',
+                            text: 'Status:'
+                        }
+                    ]
                 }
             ]
         }

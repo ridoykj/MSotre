@@ -78,13 +78,23 @@ Ext.define('MStore.view.admin.Signin', {
                     width: 280,
                     fieldLabel: 'Password',
                     inputType: 'password'
-                },
+                }
+            ],
+            dockedItems: [
                 {
-                    xtype: 'label',
-                    x: 140,
-                    y: 170,
-                    id: 'in_status',
-                    text: 'Status:'
+                    xtype: 'panel',
+                    x: 20,
+                    y: 190,
+                    dock: 'bottom',
+                    height: 70,
+                    layout: 'center',
+                    items: [
+                        {
+                            xtype: 'label',
+                            id: 'in_status',
+                            text: 'Status:'
+                        }
+                    ]
                 }
             ]
         }
